@@ -20,6 +20,38 @@ body {
   perspective: 1000px;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  /* border: 2px solid #000; */
+  border-radius: 8px;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.popup .popup-description {
+  text-align: center;
+  color: rgb(115 115 115);
+  font-size: 12px;
+}
+
+#closeButton {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  margin-top: 10px;
+}
+
+.popup p {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
 .night {
   position: fixed;
   left: 50%;
